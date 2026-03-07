@@ -14,43 +14,17 @@
     <main>
       <form>
         <!-- write your html here-->
-
-        <label>First Name
+      <div>
+        <label for="name">Name</label>
         <input type="text" name="name" minlength="2" required />
-        </label>
-        <label>Last Name
-        <input type="text" name="last-name" minlength="2" required />
-        </label>
-      <div>
-        <label>Street Address & House Number
-        <input type="text" name="address" required />
-        </label>
-        <label>City
-        <input type="text" name="city" required />
-        </label>
       </div>
       <div>
-        <label>Postcode
-        <input type="text" name="postcode" pattern="\d{4}" maxlength="4" required />
-        </label>
-      </div>
-        <label>Phone Number
-        <input type="tel" name="phone" required />
-        </label>
-        <label>Email
+      <label for="email">Email</label>
         <input type="email" name="email" required />
         </label>
-        <label>Quantity
-          <select name="quantity-unit" required>
-            <option value="">Select</option>
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5</option>
-          </select>
-        </label>
-        <label>Size
+      </div>
+      <div>
+        <label for="size">Size</label>
           <select name="size" required>
             <option value="" disabled selected>Select</option>
             <option value="extra-small">XS</option>
@@ -61,21 +35,20 @@
             <option value="extra-extra-large">XXL</option>
           </select> 
         </label> 
-      <div> 
-        <label>Color
-          <select name="color" required>
-            <option value=""disabled selected>Select</option>
-            <option value="team-logo-white">White Team Logo</option>
-            <option value="team-logo-blue">Blue Team Logo</option>
-            <option value="team-logo-black">Black Team Logo</option>
-            <option value="team-logo-gray">Gray Team Logo</option>
-            <option value="team-logo-red">Red Team Logo</option>
-         </select>
-        </label>
-      </div>
-      </div>
-      <button type="submit">Submit</button> 
-      </div>
+      <fieldset>
+        <legend>Choose a Color:</legend>
+        <div>
+          <input type="radio" id="red" name="color" value="red" required /> <label for="red">Red</label>
+        </div>
+        <div>
+          <input type="radio" id="blue" name="color" value="blue" required /> <label for="blue">Blue</label>
+        </div>
+        <div>
+          <input type="radio" id="green" name="color" value="green" required /> <label for="green">Green</label>
+        </div>
+      </fieldset>
+          
+
       
         <!-- 
           try writing out the requirements first as comments
